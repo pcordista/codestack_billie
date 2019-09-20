@@ -1,0 +1,175 @@
+/* 
+    PEDRO HENRIQUE V CORDISTA
+    CREATIVECODE | DEVSPACE
+    24/07/2019
+    CASHBOMBA - CODESTACK
+*/
+
+* {
+    max-width: 100vw !important;
+    box-sizing: border-box
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw !important;
+    font-family: 'Oswald'
+}
+
+:root {
+    --colorPurpleDark: #512645;
+    --colorPurple: #7c3a6a;
+    --colorYellow: #ffa60a;
+    --colorCiano: #0c9480;
+}
+
+.sectionStartTwo {
+    margin-top: 5rem
+}
+
+.oswaldBold {
+    font-family: 'Oswald';
+    font-weight: 700
+}
+
+/********************* MENU *********************/
+
+.menu {
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    background-color: rgba(255, 255, 255, .95)
+}
+
+/********************* SLIDER *********************/
+
+.slider:hover>.slider-principal-control>div {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.slider-principal-control>div {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s
+}
+
+.slider-principal-control img {
+    width: 25px;
+}
+
+.slider-principal-control-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.slider-principal-control-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/********************* LOJAS *********************/
+
+.section-title {
+    font-size: 1.7rem;
+    font-weight: 700
+}
+
+.loja-image {
+    background: #464646;
+    border-radius: 100%;
+}
+
+.loja-place {
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+    padding: 10px;
+    color: #7b7b7b;
+    line-height: 1.4rem;
+}
+
+.loja-description {
+    width: 75%;
+}
+
+/********************* NEWSLETTER *********************/
+
+.newsletter {
+    background: url('../img/fundo_newsletter.jpg') no-repeat;
+    background-size: cover;
+    padding: 1rem 6rem 2rem !important;
+    border: 2px solid #292929 !important;
+}
+
+.newsletter img {
+    width: 25px;
+}
+
+.newsletter-title {
+    font-size: 1.3rem;
+    letter-spacing: 2px
+}
+
+.newsletter-input {
+    border-bottom: 2px solid #292929 !important;
+    text-align: center
+}
+
+input::placeholder {
+    font-style: italic
+}
+
+.newsletter-button {
+    background-color: #292929;
+    color: white;
+    padding: .8rem 2.5rem
+}
+
+.newsletter-parceiro img {
+    min-height: 220px;
+    max-height: 226px;
+}
+
+/********************* FOOTER *********************/
+
+.footer {
+    background-color: #292929;
+    padding: .5rem 1rem;
+}
+
+.footer img {
+    width: 180px;
+    margin: 0 5px
+}
+
+@media (max-width: 540px) {
+    .newsletter-parceiro img {
+        min-height: 350px;
+        max-height: 350px;
+    }
+
+    .footer > div {
+    display: flex;
+    flex-flow: column;
+    }
+
+    .footer > div > a:first-child {
+        margin-bottom: 10px
+    }
+}
